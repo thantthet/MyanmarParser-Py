@@ -5,6 +5,9 @@ This is the python version of https://github.com/thanlwinsoft/MyanmarParser
 ## Usage
 
 ```python
+
+from myparser import MyParser
+
 m = MyParser()
 
 str = u'နေကောင်းရဲ့လား'
