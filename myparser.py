@@ -335,13 +335,3 @@ class MyParser:
 		if charClass == MMC_WJ or charClass == MMC_RQ or charClass == MMC_LQ or charClass == MMC_SP or charClass == MMC_NJ:
 			return true
 		return false
-
-m = MyParser()
-
-str = u'နေကောင်းရဲ့လား'
-offset = 0 
-
-while offset < len(str):
-    breaktype, next_offset = m.get_next_syllable(str, len(str), offset) # parse
-    print str[offset:next_offset] # extract syllable using start offset and end offset
-    offset = next_offset
